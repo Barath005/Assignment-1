@@ -1,0 +1,373 @@
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+/* Comman */
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+
+/* Background color */
+body{
+    background: linear-gradient(to bottom, hsl(216, 75%, 97%), hsl(204, 92%, 90%));
+
+}
+section{
+    padding:2rem 9%;
+    
+}
+header{
+    display: flex; 
+    margin: 5%;
+
+    
+}
+.virat{
+    display: flex;
+
+}
+
+
+
+/* Rotation on virat kolhi font */
+.virat:hover{
+    transform: rotateZ(360deg);
+  
+    transition: 1s;
+
+}
+
+nav{
+    display: flex;
+    margin-top: 5px;
+    padding-left: 600px; 
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+.navbar a{
+    font-size: 20px;
+    font-weight: bolder;
+    color: gray;
+
+
+}
+/* Padding effect in navbar */
+.navbar a:hover{
+    color: black;
+    padding-right: 5px;
+}
+
+.home{
+    min-height: 75vh;
+    display: grid;
+    place-items: center;
+    padding-top: 4rem;
+    margin-bottom: 1%;
+}
+.home .content{
+    border-radius: .5rem;
+    max-width: 55rem;
+    padding:3rem 5rem;
+    background: wheat;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);;
+    text-align: center;
+
+}
+
+.home .content h3{
+    color: black;
+    font-size: 3.5rem;
+}
+.home p{
+    font-size: 20px;
+    font-style: italic;
+}
+.btn{
+    margin-top: .5rem;
+    display: inline-block;
+    padding:.9rem 3.5rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: blue;
+    border-radius: 5rem;
+    cursor: pointer;
+
+}
+
+/* hover effect in button */
+.btn:hover{
+    letter-spacing: .2rem;
+    opacity: .8;
+}
+
+#biography{
+    
+    margin-left: 42%;
+    margin-bottom: 2%;
+    font-size: 50px;
+    font-weight: bolder;
+    color: darkslategray;
+}
+#p{
+    font-size: 25px;
+    text-indent: 4em;
+    margin: 25px 50px ;
+}
+
+table, tr, td {
+    border:1px solid black;
+    text-align: center;
+    margin-left: 30rem;
+    
+  }
+
+table{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: red;
+}
+
+
+table:hover{
+    transform: scale(120%);
+}
+caption{
+    
+    margin-left: 4%;
+    margin-bottom: 5%;
+    font-size: 35px;
+    font-weight: bolder;
+    color: darkslategray;
+} 
+
+
+#mile{
+    margin-left: 42%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 35px;
+    color: darkslategray;
+}
+#stone{
+    font-size: 25px;
+    text-indent: 4em;
+    margin: 25px 50px ;
+}
+
+
+.heading{
+    margin-left: 45%;
+    margin-bottom: 2%;
+    font-size: 50px;
+    font-weight: bolder;
+    color: darkslategray;
+}
+.gallery .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 5rem;
+}
+.gallery .box-container .box{
+    height: 25rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    border:1rem solid hsl(204, 80%, 63%);
+    position: relative;
+    cursor: pointer;
+}
+.gallery .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* Zoom out effect in gallery */
+.gallery .box-container .box img:hover{
+    border: 2rem solid black;
+    
+}
+.achievements h1{
+    margin-left: 37%;
+    padding: 50px;
+    font-size: 35px;
+    color: darkslategray;
+}
+.achievements .box-container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.achievements .box-container1 .box1{
+    background-color: wheat;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 10px;
+   
+}
+.box-container1 .box1 li{
+    list-style: none;
+}
+.achievements .box-container1 .box1 h3{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+.achievements .box-container1 .box1 ul{
+    color: orangered;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Zoom in effect achievements */
+.achievements .box-container1 .box1:hover{
+    background-color: whitesmoke;
+    transform: scale(110%);
+}
+.quotes h1{
+    margin-left: 40%;
+    padding: 50px;
+    font-size: 35px;
+    color: darkslategray;
+
+}
+
+.quotes .box-container2{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1.5rem;
+   
+}
+.quotes .box-container2 .box2{
+    padding:3rem;
+    border-radius: 1rem;
+    background-color: lightblue ;
+    position: relative;
+}
+.quotes .box-container2 .box2 span{
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bolder;
+    opacity: .2;
+    position: absolute;
+    top:1rem; right: 2.5rem;
+}
+.quotes .box-container2 .box2 p{
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-weight: bolder;
+}
+/* Zoom in effect quotes */
+.quotes .box-container2 .box2:hover{
+    transform: scale(110%);
+}
+
+/*Styling header contact*/
+.contact h1{
+    margin-left: 40%;
+    padding: 50px;
+    font-size: 35px;
+    color: darkslategray;
+
+}
+/*styling container*/
+.contact .container{
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*styling form*/
+.container form{
+    width: 90%;
+    width: 750px;
+    padding: 50px 30px 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/*styling icon*/
+.fa-paper-plane{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*styling input group*/
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label{
+    flex-basis: 28%;
+}
+.input-group input, .input-group textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px;
+}
+/*styling button*/
+form button{
+    background: #141a34;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+.input-group span{
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+/* styling after submitting*/
+#submit-success{
+    color: green;
+}
+.input-group span i{
+    color: seagreen;
+}
+
+footer{
+    margin-left: -12%;
+}
