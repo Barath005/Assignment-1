@@ -20,19 +20,13 @@ body{
     background: linear-gradient(to bottom, hsl(216, 75%, 97%), hsl(204, 92%, 90%));
 
 }
-section{
-    padding:2rem 9%;
-    
-}
-header{
-    display: flex; 
-    margin: 5%;
-
-    
-}
-.virat{
+.header{
     display: flex;
-
+    margin: 1rem;
+    justify-content: space-between;
+}
+.header .virat{
+    margin: 2rem;
 }
 
 
@@ -43,21 +37,22 @@ header{
   
     transition: 1s;
 
-}
+} 
+
+/* styling nav links */
 
 nav{
     display: flex;
-    margin-top: 5px;
-    padding-left: 600px; 
-    align-items: flex-end;
-    flex-direction: row;
+    margin: 2rem;
+    justify-content: space-evenly;
     gap: 1rem;
+     
 
 }
 .navbar a{
     font-size: 20px;
     font-weight: bolder;
-    color: gray;
+    color: black;
 
 
 }
@@ -66,7 +61,6 @@ nav{
     color: black;
     padding-right: 5px;
 }
-
 .home{
     min-height: 75vh;
     display: grid;
@@ -92,6 +86,8 @@ nav{
     font-size: 20px;
     font-style: italic;
 }
+
+/* styling button inside home */
 .btn{
     margin-top: .5rem;
     display: inline-block;
@@ -110,6 +106,12 @@ nav{
     opacity: .8;
 }
 
+/* styling button for scrool up button */
+.doubletap{
+    font-size: 30px;
+    padding-left: 95%;
+    position: fixed;
+}
 #biography{
     
     margin-left: 42%;
@@ -123,33 +125,49 @@ nav{
     text-indent: 4em;
     margin: 25px 50px ;
 }
+/* styling table header */
+.caption{
 
-table, tr, td {
-    border:1px solid black;
-    text-align: center;
-    margin-left: 30rem;
-    
-  }
-
-table{
-    text-align: center;
-    font-size: 25px;
-    font-weight: bolder;
-    color: red;
-}
-
-
-table:hover{
-    transform: scale(120%);
-}
-caption{
-    
-    margin-left: 4%;
-    margin-bottom: 5%;
+    margin-left: 40%;
     font-size: 35px;
     font-weight: bolder;
     color: darkslategray;
 } 
+
+/* styling table and inside table cell */
+
+.table {
+    display:table;
+    font-size: 25px;
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+    border: 5px solid #000;
+    outline: 1px;
+}
+.table-header {
+    display:table-header-group;
+    color: red;
+    font-weight:900;
+}
+.row {
+    display:table-row;
+}
+.rowGroup {
+    display:table-row-group;
+}
+.cell {
+    display:table-cell;
+    width:25%;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 1rem;
+}
+
+/* hover effect after cursor on table */
+.table:hover{
+    transform: scale(110%);
+}
 
 
 #mile{
@@ -164,18 +182,19 @@ caption{
     text-indent: 4em;
     margin: 25px 50px ;
 }
-
+/* Gallery styling */
 
 .heading{
-    margin-left: 45%;
-    margin-bottom: 2%;
+    margin:3% 44%;
+
     font-size: 50px;
     font-weight: bolder;
     color: darkslategray;
 }
 .gallery .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    margin: 40px;
+    grid-template-columns: repeat(3,1fr);
     gap: 5rem;
 }
 .gallery .box-container .box{
@@ -198,6 +217,9 @@ caption{
     border: 2rem solid black;
     
 }
+
+/* Achievements styling */
+
 .achievements h1{
     margin-left: 37%;
     padding: 50px;
@@ -206,8 +228,10 @@ caption{
 }
 .achievements .box-container1{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(2,700px);
+    margin: 30px;
+    row-gap: 5rem;
+    column-gap: 4rem;
 }
 .achievements .box-container1 .box1{
     background-color: wheat;
@@ -235,6 +259,7 @@ caption{
     background-color: whitesmoke;
     transform: scale(110%);
 }
+
 .quotes h1{
     margin-left: 40%;
     padding: 50px;
@@ -246,10 +271,12 @@ caption{
 .quotes .box-container2{
     display: grid;
     grid-auto-flow: row;
+    margin: 40px;
     gap: 1.5rem;
    
 }
 .quotes .box-container2 .box2{
+    margin: 1.5%;
     padding:3rem;
     border-radius: 1rem;
     background-color: lightblue ;
@@ -271,8 +298,9 @@ caption{
 }
 /* Zoom in effect quotes */
 .quotes .box-container2 .box2:hover{
-    transform: scale(110%);
+    transform: scale(105%);
 }
+
 
 /*Styling header contact*/
 .contact h1{
@@ -368,6 +396,7 @@ form button{
     color: seagreen;
 }
 
+
 footer{
-    margin-left: -12%;
+    margin-left:5%;
 }
