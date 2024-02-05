@@ -1,0 +1,148 @@
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Styling for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: small;
+}
+
+/* Styling for the navigation bar */
+.navbar {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+/* Styling for navigation bar links */
+.navbar a {
+    flex: 0%;
+    text-align: center;
+    padding: .7rem;
+    font-size: 16px;
+    border: 2px solid red;
+    background-color: wheat;
+    color: black;
+}
+
+/* Styling for main content section */
+section {
+    margin: 2rem;
+    border: 5px solid black;
+}
+
+/* Styling for the main container */
+.container {
+    max-height: 100vh auto;
+    margin: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Styling for individual boxes within the container */
+.box {
+    width: 400px;
+    border: 3px solid red;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Set a different width for the third box */
+.box:nth-child(3) {
+    flex: 2;
+}
+
+/* Styling for images inside boxes */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Styling for text paragraphs inside boxes */
+p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Styling for a button inside a box */
+#button {
+    margin-top: auto; /* Adjusted to align buttons to the bottom of the box */
+}
+
+/* Styling for generic buttons */
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #217dbb;
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styling for links within the footer */
+footer a {
+    color: red;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    /* Adjusting the display for body and section */
+    body, section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Centering items in the header for smaller screens */
+    header {
+        align-items: center;
+    }
+
+    /* Adjusting the display for the navbar */
+    .navbar {
+        flex-wrap: wrap;
+        order: 2;
+    }
+
+    /* Adjusting the display for the footer */
+    footer {
+        order: 3;
+    }
+}
+
+
