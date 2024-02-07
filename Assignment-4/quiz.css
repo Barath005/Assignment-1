@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* Fitting image in background */
+body{
+    background-image: url(./images/Virat-Kohli-14.webp);
+    background-size: 37.8%;
+    
+}
+/* Styling for start screen container */
+.start-screen{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center; 
+   
+}
+/* Styling for the main content box within the start screen */
+.box{
+    height: 370px;
+    width: 700px;
+    align-items: center;
+    border: 3px solid white;
+    background-color: whitesmoke;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; 
+
+}
+.box h1,h3{
+    font-weight: bolder;
+    color: brown;
+}
+/* Styling for three tags */
+.box p,.user-score,#feedback {
+    padding-top: 20px;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+}
+.box h3{
+    padding-top: 20px;
+
+}
+/* Styling for ordered list */
+.box ol{
+    padding-top: 20px;
+    font-size: medium;
+    font-weight: bold;
+    color: crimson;
+}
+/* Styling for both buttons */
+.box  button ,.score-container button{
+    font-weight: bolder;
+    margin: 25px;
+    background-color: lightcoral; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Hover effect for the start button */
+#start:hover {
+    background-color: hsl(0, 100%, 65%);
+
+}
+
+/* Styling for restart button */
+#restart {
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+#restart {
+    margin-top: 14px;
+}
+
+/*Styling for elements with the hide class*/
+.hide{
+    display: none;
+}
+
+/* Styling for display and score container */
+#display-container,.score-container {
+    background-color: #ffffff;
+    padding: 50px 30px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+}
+/* Styling for header class inside in display-container */
+.header{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+/*Styling for the timer container */
+.timer-div{
+    background-color: wheat;
+    width: 125px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+}
+.question{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Styling for options in the quiz container */
+.option-div{
+    font-size: 14px;
+    width: 100%;
+    padding: 16px;
+    margin: 4px 0;
+    text-align: left;
+    outline: none;
+    background: transparent;
+    border: 3px solid rgba(41, 40, 40, 0.153);
+    border-radius: 5px;
+}
+.option-div:disabled{
+    color: black;
+    cursor: not-allowed;
+}
+
+/* Styling for next button */
+#next-button{
+    font-size: 16px;
+    margin-top: 24px;
+    background-color: lightcoral;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 5px;
+    float: right;
+}
+
+/* hover effect for next and restart button */
+#next-button,#restart:hover {
+    background-color: hsl(0, 100%, 65%);
+
+}
+/* Styling for incorrect options */
+.incorrect{
+    background-color: rgb(249, 111, 111);
+    color: red;
+    border-color: darkred;
+
+}
+/* Styling for correct options */
+.correct{
+    background-color:rgb(157, 244, 157);
+    color: darkgreen;
+    border-color: green;
+}
+
+.no-of-questions{
+    font-weight: bolder;
+}
+.score{
+    font-weight: bold;
+    padding-left: 75px;
+}

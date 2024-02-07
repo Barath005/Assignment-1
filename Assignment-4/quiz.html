@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virat kohli Quiz</title>
+    <!-- CSS link page -->
+    <link rel="stylesheet" href="./quiz.css">
+</head>
+<body>
+    <section>
+        <!-- Start screen card -->
+        <div class="start-screen">
+            <div class="box">
+                <h1>Virat kohli quiz</h1>
+                <p>The former captain of the Indian national team, King Kohli's all-rounder qualities have won millions of hearts on-field and off-field. Most of us know about his remarkable journey and victories. If you are a true King Kohli fan, this quiz is for you:</p>
+                <h3>Instruction:</h3>
+                <ol>
+                    <li>You will have only 25 seconds for each questions.</li>
+                    <li>Once you select your answer, it can't be undone.</li>
+                    <li>You'll get points on the basis of your correct answers.</li>
+                    </ol>
+                <button id="start">START</button>
+            </div>
+        </div>
+    </section>
+    <!-- Quiz screen card -->
+    <div id="display-container">
+        <div class="header">
+            <div class="no-of-count">
+                <span class="no-of-questions">1 of 10 questions</span>
+                <span class="score">Score: <span id="user-score">0</span></span>
+            </div>
+            <div class="timer-div">
+                <img src="./images/timer.svg">
+                <span class="time-left">25's</span>
+            </div>
+        </div>
+        <div id="container">
+            <!-- questions and options will be displayed here -->
+        </div>
+        <button id="next-button">Next</button>
+    </div>
+    <!-- Score screen card -->
+    <div class="score-container hide">
+        <div class="user-score">Score</div>
+        <p id="feedback">feedback </p>
+        <button id="restart">RESTART</button>
+    </div>
+
+    <!-- Javascript link -->
+
+    <script src="./quiz.js"></script>
+
+
+
+    
+</body>
+</html>
